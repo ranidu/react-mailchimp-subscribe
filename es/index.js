@@ -78,7 +78,7 @@ var SubscribeForm = function (_React$Component) {
         styles = _props.styles;
     var _state = this.state,
         status = _state.status,
-        response = _state.response;
+        msg = _state.msg;
 
     return React.createElement(
       "div",
@@ -111,7 +111,7 @@ var SubscribeForm = function (_React$Component) {
         ),
         status === "sending" && React.createElement("p", { style: styles.sending, dangerouslySetInnerHTML: { __html: messages.sending } }),
         status === "success" && React.createElement("p", { style: styles.success, dangerouslySetInnerHTML: { __html: messages.success } }),
-        status === "error" && React.createElement("p", { style: styles.error, dangerouslySetInnerHTML: { __html: response } })
+        status === "error" && React.createElement("p", { style: styles.error, dangerouslySetInnerHTML: { __html: msg } })
       )
     );
   };

@@ -362,7 +362,7 @@ var SubscribeForm = function (_React$Component) {
         styles = _props.styles;
     var _state = this.state,
         status = _state.status,
-        response = _state.response;
+        msg = _state.msg;
 
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       "div",
@@ -431,7 +431,7 @@ var SubscribeForm = function (_React$Component) {
           },
           __self: this
         }),
-        status === "error" && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", { style: styles.error, dangerouslySetInnerHTML: { __html: response }, __source: {
+        status === "error" && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", { style: styles.error, dangerouslySetInnerHTML: { __html: msg }, __source: {
             fileName: _jsxFileName,
             lineNumber: 75
           },
